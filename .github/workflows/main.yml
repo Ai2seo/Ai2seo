@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+
+# Data
+states = [
+    'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN',
+    'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV',
+    'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN',
+    'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'
+]
+
+incomes = [
+    190, 243, 231, 189, 277, 265, 250, 229, 209, 213, 295, 211, 214, 191, 191, 197, 191,
+    190, 232, 230, 301, 206, 245, 178, 194, 211, 213, 237, 244, 251, 204, 279, 202, 202,
+    198, 194, 257, 230, 249, 196, 193, 196, 201, 218, 244, 209, 257, 189, 211, 203
+]
+
+# Plotting
+plt.figure(figsize=(15, 10))
+plt.bar(states, incomes, color='skyblue')
+plt.xlabel('States')
+plt.ylabel('Income Required ($K)')
+plt.title('The Income a Family Needs to Live Comfortably in the U.S.')
+plt.xticks(rotation=90)
+plt.tight_layout()
+
+# Show plot
+plt.show()
